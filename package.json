@@ -1,0 +1,16 @@
+{
+  "name": "first",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ chainext/first",
+    "create-local": "graph create --node http://localhost:8020/ chainext/first",
+    "remove-local": "graph remove --node http://localhost:8020/ chainext/first",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 chainext/first"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.20.1",
+    "@graphprotocol/graph-ts": "0.20.0"
+  }
+}
